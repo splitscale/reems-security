@@ -9,8 +9,7 @@ public class EditEnergyConsumptionWrapper {
 
   private EditEnergyConsumptionInteractor interactor;
 
-  public EditEnergyConsumptionWrapper(
-      EditEnergyConsumptionInteractor interactor) {
+  public EditEnergyConsumptionWrapper(EditEnergyConsumptionInteractor interactor) {
     this.interactor = interactor;
   }
 
