@@ -43,6 +43,12 @@
       <artifactId>mockito-core</artifactId>
       <version>4.9.0</version>
     </dependency>
+
+    <dependency>
+      <groupId>com.splitscale.reems</groupId>
+      <artifactId>reems-core</artifactId>
+      <version>1.0</version>
+    </dependency>
   </dependencies>
 
   <build>
