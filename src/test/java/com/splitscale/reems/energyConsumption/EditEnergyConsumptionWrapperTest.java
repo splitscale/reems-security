@@ -31,7 +31,6 @@ public class EditEnergyConsumptionWrapperTest {
     public void testEditEnergyConsumption() throws IOException, GeneralSecurityException {
         // Arrange
         EnergyConsumption energyConsumption = new EnergyConsumption(null, null, null, null, null, null, null, null);
-        doNothing().when(interactor).editEnergyConsumption(energyConsumption);
 
         // Act
         wrapper.edit(energyConsumption);
