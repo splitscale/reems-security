@@ -9,6 +9,10 @@ public class CreateEnvironmentalHazardWrapper {
 
   private CreateEnvironmentalHazardInteractor interactor;
 
+  public CreateEnvironmentalHazardWrapper(CreateEnvironmentalHazardInteractor interactor) {
+    this.interactor = interactor;
+  }
+
   public String create(EnvironmentalHazardRequest environmentalHazardRequest)
       throws IOException, GeneralSecurityException {
     return interactor.createEnvironmentalHazard(environmentalHazardRequest);
