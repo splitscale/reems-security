@@ -15,12 +15,12 @@ public class ReadTenantInfo {
   }
 
   public List<TenantInfo> getAllTenantInfo()
-    throws IOException, GeneralSecurityException {
+      throws IOException, GeneralSecurityException {
     return interactor.getAllTenantInfo();
   }
 
   public TenantInfo getTenantInfoById(String id)
-    throws IOException, GeneralSecurityException {
+      throws IOException, GeneralSecurityException {
     return interactor.getTenantInfoById(id);
   }
 }
