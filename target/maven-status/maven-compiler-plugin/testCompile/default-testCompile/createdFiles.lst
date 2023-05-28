@@ -1,0 +1,6 @@
+com\splitscale\reems\mitigation\DeleteMitigationWrapperTest.class
+com\splitscale\reems\mitigation\ReadMitigationWrapperTest.class
+com\splitscale\reems\history\EditHistoryWrapperTest.class
+com\splitscale\reems\tenantInfo\DeleteTenantInfoTest.class
+com\splitscale\reems\expenses\CreateExpenseWrapperTest.class
+com\splitscale\reems\energyConsumption\DeleteEnergyConsumptionWrapperTest.class

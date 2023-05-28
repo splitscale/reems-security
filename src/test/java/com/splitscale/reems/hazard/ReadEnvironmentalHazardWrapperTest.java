@@ -33,10 +33,8 @@ public class ReadEnvironmentalHazardWrapperTest {
     @Test
     public void testGetAllEnvironmentalHazard() throws IOException, GeneralSecurityException {
         // Arrange
-        EnvironmentalHazard hazard1 = new EnvironmentalHazard(null, null, null, null, null, null, null, null, null,
-                null);
-        EnvironmentalHazard hazard2 = new EnvironmentalHazard(null, null, null, null, null, null, null, null, null,
-                null);
+        EnvironmentalHazard hazard1 = new EnvironmentalHazard(null, null, null, null, null, null, null, null);
+        EnvironmentalHazard hazard2 = new EnvironmentalHazard(null, null, null, null, null, null, null, null);
         List<EnvironmentalHazard> expectedHazards = Arrays.asList(hazard1, hazard2);
 
         when(interactor.getAllEnvironmentalHazard()).thenReturn(expectedHazards);
@@ -53,7 +51,7 @@ public class ReadEnvironmentalHazardWrapperTest {
     public void testGetEnvironmentalHazardById() throws IOException, GeneralSecurityException {
         // Arrange
         String id = "123";
-        EnvironmentalHazard expectedHazard = new EnvironmentalHazard(id, id, id, id, id, id, id, id, null, null);
+        EnvironmentalHazard expectedHazard = new EnvironmentalHazard();
 
         when(interactor.getEnvironmentalHazardById(id)).thenReturn(expectedHazard);
 

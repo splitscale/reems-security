@@ -30,7 +30,7 @@ public class EditTenantInfoTest {
     @Test
     public void testEditTenantInfo() throws IOException, GeneralSecurityException {
         // Arrange
-        TenantInfo tenantInfo = new TenantInfo(null, null, null);
+        TenantInfo tenantInfo = new TenantInfo(null, null, null, null);
 
         // Act
         wrapper.edit(tenantInfo);

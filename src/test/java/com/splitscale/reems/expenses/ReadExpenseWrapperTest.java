@@ -33,13 +33,13 @@ public class ReadExpenseWrapperTest {
         String id = "123";
         Expense expectedExpense = new Expense(id, id, null, null);
 
-        when(interactor.getById(id)).thenReturn(expectedExpense);
+        when(interactor.getExpenseById(id)).thenReturn(expectedExpense);
 
         // Act
         Expense actualExpense = wrapper.getExpenseById(id);
 
         // Assert
         assertEquals(expectedExpense, actualExpense);
-        verify(interactor, times(1)).getById(id);
+        verify(interactor, times(1)).getExpenseById(id);
     }
 }
