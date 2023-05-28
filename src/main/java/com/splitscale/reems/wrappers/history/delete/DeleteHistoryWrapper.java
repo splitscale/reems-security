@@ -13,7 +13,7 @@ public class DeleteHistoryWrapper {
   }
 
   public void delete(String id) throws IOException, GeneralSecurityException {
-    interactor.deleteHistory(id);
+    interactor.deleteHistoryById(id);
   }
 
   public void deleteAll() throws IOException, GeneralSecurityException {

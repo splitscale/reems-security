@@ -15,6 +15,6 @@ public class ReadExpenseWrapper {
 
   public Expense getExpenseById(String id)
       throws IOException, GeneralSecurityException {
-    return interactor.getById(id);
+    return interactor.getExpenseById(id);
   }
 }
