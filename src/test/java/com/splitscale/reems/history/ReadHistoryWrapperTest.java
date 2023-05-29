@@ -1,6 +1,7 @@
 package com.splitscale.reems.history;
 
 import com.splitscale.reems.history.read.ReadHistoryInteractor;
+import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.history.read.ReadHistory;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -21,12 +22,15 @@ public class ReadHistoryWrapperTest {
     @Mock
     private ReadHistoryInteractor interactor;
 
+    @Mock
+    private SecurityService securityService;
+
     private ReadHistory wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new ReadHistory(interactor);
+        wrapper = new ReadHistory(securityService, interactor);
     }
 
     @Test
@@ -39,10 +43,11 @@ public class ReadHistoryWrapperTest {
         when(interactor.getAllHistory()).thenReturn(expectedHistoryList);
 
         // Act
-        List<History> actualHistoryList = wrapper.getAllHistory();
+        List<History> actualHistoryList = wrapper.getAllHistory("jwtToken", "userId");
 
         // Assert
         assertEquals(expectedHistoryList, actualHistoryList);
+        verify(securityService, times(1)).validateJwt("jwtToken", "userId");
         verify(interactor, times(1)).getAllHistory();
     }
 
@@ -55,10 +60,11 @@ public class ReadHistoryWrapperTest {
         when(interactor.getById(id)).thenReturn(expectedHistory);
 
         // Act
-        History actualHistory = wrapper.getHistoryById(id);
+        History actualHistory = wrapper.getHistoryById(id, "jwtToken", "userId");
 
         // Assert
         assertEquals(expectedHistory, actualHistory);
+        verify(securityService, times(1)).validateJwt("jwtToken", "userId");
         verify(interactor, times(1)).getById(id);
     }
 }

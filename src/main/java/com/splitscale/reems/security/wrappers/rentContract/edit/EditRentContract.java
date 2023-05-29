@@ -22,6 +22,5 @@ public class EditRentContract {
     securityService.validateJwt(jwtToken, userId);
 
     interactor.editRentContract(rentContract);
-    ;
   }
 }

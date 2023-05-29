@@ -29,4 +29,10 @@ public class DeleteHistory {
 
     interactor.deleteAllHistory();
   }
+
+  public void deleteAllHistory() {
+  }
+
+  public void deleteHistory(String id) {
+  }
 }
