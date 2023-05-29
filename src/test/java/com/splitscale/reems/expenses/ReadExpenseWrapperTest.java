@@ -31,7 +31,7 @@ public class ReadExpenseWrapperTest {
     public void testGetExpenseById() throws IOException, GeneralSecurityException {
         // Arrange
         String id = "123";
-        Expense expectedExpense = new Expense(id, id, null, null);
+        Expense expectedExpense = new Expense();
 
         when(interactor.getExpenseById(id)).thenReturn(expectedExpense);
 
