@@ -31,7 +31,7 @@ public class CreateTenantInfoTest {
     @Test
     public void testCreateTenantInfo() throws IOException, GeneralSecurityException {
         // Arrange
-        TenantInfoRequest request = new TenantInfoRequest(null, null);
+        TenantInfoRequest request = new TenantInfoRequest(null, null, null, null);
         String expectedResponse = "Success";
 
         when(interactor.createTenantInfo(request)).thenReturn(expectedResponse);

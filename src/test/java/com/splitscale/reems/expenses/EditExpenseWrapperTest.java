@@ -29,7 +29,7 @@ public class EditExpenseWrapperTest {
     @Test
     public void testEditExpense() throws IOException, GeneralSecurityException {
         // Arrange
-        Expense expense = new Expense(null, null, null, null);
+        Expense expense = new Expense(null, null, null, null, null);
 
         // Act
         wrapper.edit(expense);

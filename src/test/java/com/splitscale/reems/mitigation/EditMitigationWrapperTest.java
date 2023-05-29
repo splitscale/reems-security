@@ -29,7 +29,7 @@ public class EditMitigationWrapperTest {
     @Test
     public void testEditMitigation() throws IOException, GeneralSecurityException {
         // Arrange
-        Mitigation mitigation = new Mitigation(null, null, null, null, null, null, null);
+        Mitigation mitigation = new Mitigation(null, null, null, null, null, null, null, null);
 
         // Act
         wrapper.edit(mitigation);

@@ -35,7 +35,7 @@ public class DeleteHistoryWrapperTest {
         wrapper.delete(id);
 
         // Assert
-        verify(interactor, times(1)).deleteHistory(id);
+        verify(interactor, times(1)).deleteHistoryById(id);
     }
 
     @Test

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.splitscale.reems.mitigation.DeleteMitigationWrapperTest" time="0.016" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Jiv Dela Cruz\Desktop\FINAL PROJ_REEMS\reems-security\target\test-classes;C:\Users\Jiv Dela Cruz\Desktop\FINAL PROJ_REEMS\reems-security\target\classes;C:\Users\Jiv Dela Cruz\.m2\repository\org\mockito\mockito-junit-jupiter\4.9.0\mockito-junit-jupiter-4.9.0.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\mockito\mockito-core\4.9.0\mockito-core-4.9.0.jar;C:\Users\Jiv Dela Cruz\.m2\repository\net\bytebuddy\byte-buddy\1.12.16\byte-buddy-1.12.16.jar;C:\Users\Jiv Dela Cruz\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.16\byte-buddy-agent-1.12.16.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Jiv Dela Cruz\.m2\repository\com\splitscale\reems\reems-core\1.0\reems-core-1.0.jar;"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="user.timezone" value="Asia/Manila"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PH"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-17.0.3.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\JIVDEL~1\AppData\Local\Temp\surefire9778774398904061641\surefirebooter4203820074276794388.jar C:\Users\Jiv Dela Cruz\AppData\Local\Temp\surefire9778774398904061641 2023-05-29T14-25-10_569-jvmRun1 surefire15543585557893314489tmp surefire_011589941866642532436tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Jiv Dela Cruz\Desktop\FINAL PROJ_REEMS\reems-security\target\test-classes;C:\Users\Jiv Dela Cruz\Desktop\FINAL PROJ_REEMS\reems-security\target\classes;C:\Users\Jiv Dela Cruz\.m2\repository\org\mockito\mockito-junit-jupiter\4.9.0\mockito-junit-jupiter-4.9.0.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\mockito\mockito-core\4.9.0\mockito-core-4.9.0.jar;C:\Users\Jiv Dela Cruz\.m2\repository\net\bytebuddy\byte-buddy\1.12.16\byte-buddy-1.12.16.jar;C:\Users\Jiv Dela Cruz\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.16\byte-buddy-agent-1.12.16.jar;C:\Users\Jiv Dela Cruz\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Jiv Dela Cruz\.m2\repository\com\splitscale\reems\reems-core\1.0\reems-core-1.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Jiv Dela Cruz"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.home" value="C:\Program Files\Microsoft\jdk-17.0.3.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Jiv Dela Cruz\Desktop\FINAL PROJ_REEMS\reems-security"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\JIVDEL~1\AppData\Local\Temp\surefire9778774398904061641\surefirebooter4203820074276794388.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.3+7-LTS"/>
+    <property name="user.name" value="Jiv Dela Cruz"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-32931"/>
+    <property name="localRepository" value="C:\Users\Jiv Dela Cruz\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\JIVDEL~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.3"/>
+    <property name="user.dir" value="C:\Users\Jiv Dela Cruz\Desktop\FINAL PROJ_REEMS\reems-security"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Microsoft\jdk-17.0.3.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft\jdk-17.0.3.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Users\Jiv Dela Cruz\Downloads\apache-maven-3.8.6-bin;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.9.2\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Jiv Dela Cruz\AppData\Local\Microsoft\WindowsApps;C:\Users\Jiv Dela Cruz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jiv Dela Cruz\AppData\Local\GitHubDesktop\bin;C:\Users\Jiv Dela Cruz\.dotnet\tools;C:\Users\Jiv Dela Cruz\AppData\Local\Android\Sdk\platform-tools;C:\Users\Jiv Dela Cruz\AppData\Roaming\npm;C:\Users\Jiv Dela Cruz\Desktop\IntelliJ IDEA 2022.2.1\bin;;C:\Users\Jiv Dela Cruz\Desktop\apache-maven-3.8.6;C:\Program Files\Microsoft\jdk-17.0.3.7-hotspot\bin;;C:\Users\Jiv Dela Cruz\AppData\Local\spicetify;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="17.0.3+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testDeleteMitigation" classname="com.splitscale.reems.mitigation.DeleteMitigationWrapperTest" time="0.015"/>
+</testsuite>

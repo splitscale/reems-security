@@ -30,7 +30,7 @@ public class CreateExpenseWrapperTest {
     @Test
     public void testCreateExpense() throws IOException, GeneralSecurityException {
         // Arrange
-        ExpenseRequest request = new ExpenseRequest(null);
+        ExpenseRequest request = new ExpenseRequest(null, null, null, null, null);
         String expectedResponse = "Success";
 
         when(interactor.createExpense(request)).thenReturn(expectedResponse);

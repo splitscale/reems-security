@@ -31,15 +31,15 @@ public class ReadExpenseWrapperTest {
     public void testGetExpenseById() throws IOException, GeneralSecurityException {
         // Arrange
         String id = "123";
-        Expense expectedExpense = new Expense(id, id, null, null);
+        Expense expectedExpense = new Expense();
 
-        when(interactor.getById(id)).thenReturn(expectedExpense);
+        when(interactor.getExpenseById(id)).thenReturn(expectedExpense);
 
         // Act
         Expense actualExpense = wrapper.getExpenseById(id);
 
         // Assert
         assertEquals(expectedExpense, actualExpense);
-        verify(interactor, times(1)).getById(id);
+        verify(interactor, times(1)).getExpenseById(id);
     }
 }
