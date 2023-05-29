@@ -14,7 +14,8 @@ public class CreateTenantInfo {
   }
 
   public String create(TenantInfoRequest tenantInfoRequest)
-    throws IOException, GeneralSecurityException {
+      throws IOException, GeneralSecurityException {
+
     return interactor.createTenantInfo(tenantInfoRequest);
   }
 }
