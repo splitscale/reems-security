@@ -1,7 +1,7 @@
 package com.splitscale.reems.hazard;
 
 import com.splitscale.reems.hazard.environment.delete.DeleteEnvironmentalHazardInteractor;
-import com.splitscale.reems.security.wrappers.hazard.delete.DeleteEnvironmentalHazardWrapper;
+import com.splitscale.reems.security.wrappers.hazard.delete.DeleteEnvironmentalHazard;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,12 +18,12 @@ public class DeleteEnvironmentalHazardWrapperTest {
     @Mock
     private DeleteEnvironmentalHazardInteractor interactor;
 
-    private DeleteEnvironmentalHazardWrapper wrapper;
+    private DeleteEnvironmentalHazard wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new DeleteEnvironmentalHazardWrapper(interactor);
+        wrapper = new DeleteEnvironmentalHazard(interactor);
     }
 
     @Test

@@ -1,7 +1,7 @@
 package com.splitscale.reems.expenses;
 
 import com.splitscale.reems.expenses.read.ReadExpenseInteractor;
-import com.splitscale.reems.security.wrappers.expenses.read.ReadExpenseWrapper;
+import com.splitscale.reems.security.wrappers.expenses.read.ReadExpense;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -19,12 +19,12 @@ public class ReadExpenseWrapperTest {
     @Mock
     private ReadExpenseInteractor interactor;
 
-    private ReadExpenseWrapper wrapper;
+    private ReadExpense wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new ReadExpenseWrapper(interactor);
+        wrapper = new ReadExpense(interactor);
     }
 
     @Test

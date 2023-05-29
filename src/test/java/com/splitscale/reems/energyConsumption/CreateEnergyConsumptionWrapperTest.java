@@ -2,7 +2,7 @@ package com.splitscale.reems.energyConsumption;
 
 import com.splitscale.reems.energy.consumption.EnergyConsumptionRequest;
 import com.splitscale.reems.energy.consumption.create.CreateEnergyConsumptionInteractor;
-import com.splitscale.reems.security.wrappers.energyConsumption.create.CreateEnergyConsumptionWrapper;
+import com.splitscale.reems.security.wrappers.energyConsumption.create.CreateEnergyConsumption;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -20,12 +20,12 @@ public class CreateEnergyConsumptionWrapperTest {
     @Mock
     private CreateEnergyConsumptionInteractor interactor;
 
-    private CreateEnergyConsumptionWrapper wrapper;
+    private CreateEnergyConsumption wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new CreateEnergyConsumptionWrapper(interactor);
+        wrapper = new CreateEnergyConsumption(interactor);
     }
 
     @Test

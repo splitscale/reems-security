@@ -1,7 +1,7 @@
 package com.splitscale.reems.expenses;
 
 import com.splitscale.reems.expenses.edit.EditExpenseInteractor;
-import com.splitscale.reems.security.wrappers.expenses.edit.EditExpenseWrapper;
+import com.splitscale.reems.security.wrappers.expenses.edit.EditExpense;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,12 +18,12 @@ public class EditExpenseWrapperTest {
     @Mock
     private EditExpenseInteractor interactor;
 
-    private EditExpenseWrapper wrapper;
+    private EditExpense wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new EditExpenseWrapper(interactor);
+        wrapper = new EditExpense(interactor);
     }
 
     @Test

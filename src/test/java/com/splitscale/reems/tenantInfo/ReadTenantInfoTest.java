@@ -2,6 +2,7 @@ package com.splitscale.reems.tenantInfo;
 
 import com.splitscale.reems.tenantinfo.TenantInfo;
 import com.splitscale.reems.tenantinfo.read.ReadTenantInfoInteractor;
+import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.tenantInfo.read.ReadTenantInfo;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -19,47 +20,56 @@ import static org.mockito.Mockito.*;
 
 public class ReadTenantInfoTest {
 
-    @Mock
-    private ReadTenantInfoInteractor interactor;
+  @Mock
+  private SecurityService service;
 
-    private ReadTenantInfo readTenantInfo;
+  @Mock
+  private ReadTenantInfoInteractor interactor;
 
-    @BeforeEach
-    public void setUp() {
-        MockitoAnnotations.openMocks(this);
-        readTenantInfo = new ReadTenantInfo(interactor);
-    }
+  private ReadTenantInfo readTenantInfo;
 
-    @Test
-    public void testGetAllTenantInfo() throws IOException, GeneralSecurityException {
-        // Arrange
-        List<TenantInfo> expectedTenantInfoList = new ArrayList<>();
-        expectedTenantInfoList.add(new TenantInfo("1", "Tenant 1", null, null));
-        expectedTenantInfoList.add(new TenantInfo("2", "Tenant 2", null, null));
+  @BeforeEach
+  public void setUp() {
+    MockitoAnnotations.openMocks(this);
+    readTenantInfo = new ReadTenantInfo(service, interactor);
+  }
 
-        when(interactor.getAllTenantInfo()).thenReturn(expectedTenantInfoList);
+  @Test
+  public void testGetAllTenantInfo() throws IOException, GeneralSecurityException {
+    // Arrange
+    List<TenantInfo> expectedTenantInfoList = new ArrayList<>();
+    expectedTenantInfoList.add(new TenantInfo("1", "Tenant 1", null, null));
+    expectedTenantInfoList.add(new TenantInfo("2", "Tenant 2", null, null));
 
-        // Act
-        List<TenantInfo> actualTenantInfoList = readTenantInfo.getAllTenantInfo();
+    when(interactor.getAllTenantInfo()).thenReturn(expectedTenantInfoList);
 
-        // Assert
-        assertEquals(expectedTenantInfoList, actualTenantInfoList);
-        verify(interactor, times(1)).getAllTenantInfo();
-    }
+    // Act
+    String jwtToken = "token";
+    String userId = "userId";
 
-    @Test
-    public void testGetTenantInfoById() throws IOException, GeneralSecurityException {
-        // Arrange
-        String tenantId = "1";
-        TenantInfo expectedTenantInfo = new TenantInfo();
+    List<TenantInfo> actualTenantInfoList = readTenantInfo.getAllTenantInfo(jwtToken, userId);
 
-        when(interactor.getTenantInfoById(tenantId)).thenReturn(expectedTenantInfo);
+    // Assert
+    assertEquals(expectedTenantInfoList, actualTenantInfoList);
+    verify(interactor, times(1)).getAllTenantInfo();
+  }
 
-        // Act
-        TenantInfo actualTenantInfo = readTenantInfo.getTenantInfoById(tenantId);
+  @Test
+  public void testGetTenantInfoById() throws IOException, GeneralSecurityException {
+    // Arrange
+    String tenantId = "1";
+    TenantInfo expectedTenantInfo = new TenantInfo();
 
-        // Assert
-        assertEquals(expectedTenantInfo, actualTenantInfo);
-        verify(interactor, times(1)).getTenantInfoById(tenantId);
-    }
+    when(interactor.getTenantInfoById(tenantId)).thenReturn(expectedTenantInfo);
+
+    // Act
+    String jwtToken = "token";
+    String userId = "userId";
+
+    TenantInfo actualTenantInfo = readTenantInfo.getTenantInfoById(tenantId, jwtToken, userId);
+
+    // Assert
+    assertEquals(expectedTenantInfo, actualTenantInfo);
+    verify(interactor, times(1)).getTenantInfoById(tenantId);
+  }
 }

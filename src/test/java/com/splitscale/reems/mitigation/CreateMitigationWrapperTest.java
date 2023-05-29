@@ -1,7 +1,7 @@
 package com.splitscale.reems.mitigation;
 
 import com.splitscale.reems.mitigation.create.CreateMitigationInteractor;
-import com.splitscale.reems.security.wrappers.mitigation.create.CreateMitigationWrapper;
+import com.splitscale.reems.security.wrappers.mitigation.create.CreateMitigation;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -19,12 +19,12 @@ public class CreateMitigationWrapperTest {
     @Mock
     private CreateMitigationInteractor interactor;
 
-    private CreateMitigationWrapper wrapper;
+    private CreateMitigation wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new CreateMitigationWrapper(interactor);
+        wrapper = new CreateMitigation(interactor);
     }
 
     @Test

@@ -1,7 +1,7 @@
 package com.splitscale.reems.mitigation;
 
 import com.splitscale.reems.mitigation.read.ReadMitigationInteractor;
-import com.splitscale.reems.security.wrappers.mitigation.read.ReadMitigationWrapper;
+import com.splitscale.reems.security.wrappers.mitigation.read.ReadMitigation;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,12 +21,12 @@ public class ReadMitigationWrapperTest {
     @Mock
     private ReadMitigationInteractor interactor;
 
-    private ReadMitigationWrapper wrapper;
+    private ReadMitigation wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new ReadMitigationWrapper(interactor);
+        wrapper = new ReadMitigation(interactor);
     }
 
     @Test

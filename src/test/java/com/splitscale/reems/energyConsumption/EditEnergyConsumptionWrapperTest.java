@@ -2,7 +2,7 @@ package com.splitscale.reems.energyConsumption;
 
 import com.splitscale.reems.energy.consumption.EnergyConsumption;
 import com.splitscale.reems.energy.consumption.edit.EditEnergyConsumptionInteractor;
-import com.splitscale.reems.security.wrappers.energyConsumption.edit.EditEnergyConsumptionWrapper;
+import com.splitscale.reems.security.wrappers.energyConsumption.edit.EditEnergyConsumption;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -19,12 +19,12 @@ public class EditEnergyConsumptionWrapperTest {
     @Mock
     private EditEnergyConsumptionInteractor interactor;
 
-    private EditEnergyConsumptionWrapper wrapper;
+    private EditEnergyConsumption wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new EditEnergyConsumptionWrapper(interactor);
+        wrapper = new EditEnergyConsumption(interactor);
     }
 
     @Test

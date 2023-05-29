@@ -1,7 +1,7 @@
 package com.splitscale.reems.energyConsumption;
 
 import com.splitscale.reems.energy.consumption.delete.DeleteEnergyConsumptionInteractor;
-import com.splitscale.reems.security.wrappers.energyConsumption.delete.DeleteEnergyConsumptionWrapper;
+import com.splitscale.reems.security.wrappers.energyConsumption.delete.DeleteEnergyConsumption;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -19,12 +19,12 @@ public class DeleteEnergyConsumptionWrapperTest {
     @Mock
     private DeleteEnergyConsumptionInteractor interactor;
 
-    private DeleteEnergyConsumptionWrapper wrapper;
+    private DeleteEnergyConsumption wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new DeleteEnergyConsumptionWrapper(interactor);
+        wrapper = new DeleteEnergyConsumption(interactor);
     }
 
     @Test

@@ -1,6 +1,7 @@
 package com.splitscale.reems.tenantInfo;
 
 import com.splitscale.reems.tenantinfo.delete.DeleteTenantInfoInteractor;
+import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.tenantInfo.delete.DeleteTenantInfo;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -15,26 +16,31 @@ import static org.mockito.Mockito.*;
 
 public class DeleteTenantInfoTest {
 
-    @Mock
-    private DeleteTenantInfoInteractor interactor;
+  @Mock
+  private SecurityService service;
 
-    private DeleteTenantInfo wrapper;
+  @Mock
+  private DeleteTenantInfoInteractor interactor;
 
-    @BeforeEach
-    public void setUp() {
-        MockitoAnnotations.openMocks(this);
-        wrapper = new DeleteTenantInfo(interactor);
-    }
+  private DeleteTenantInfo wrapper;
 
-    @Test
-    public void testDeleteTenantInfo() throws IOException, GeneralSecurityException {
-        // Arrange
-        String id = "123";
+  @BeforeEach
+  public void setUp() {
+    MockitoAnnotations.openMocks(this);
+    wrapper = new DeleteTenantInfo(service, interactor);
+  }
 
-        // Act
-        wrapper.delete(id);
+  @Test
+  public void testDeleteTenantInfo() throws IOException, GeneralSecurityException {
+    // Arrange
+    String jwtToken = "token";
+    String userId = "userId";
+    String id = "123";
 
-        // Assert
-        verify(interactor, times(1)).deleteTenantInfo(id);
-    }
+    // Act
+    wrapper.delete(id, jwtToken, userId);
+
+    // Assert
+    verify(interactor, times(1)).deleteTenantInfo(id);
+  }
 }

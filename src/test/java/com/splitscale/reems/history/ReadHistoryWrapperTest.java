@@ -1,7 +1,7 @@
 package com.splitscale.reems.history;
 
 import com.splitscale.reems.history.read.ReadHistoryInteractor;
-import com.splitscale.reems.security.wrappers.history.read.ReadHistoryWrapper;
+import com.splitscale.reems.security.wrappers.history.read.ReadHistory;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,12 +21,12 @@ public class ReadHistoryWrapperTest {
     @Mock
     private ReadHistoryInteractor interactor;
 
-    private ReadHistoryWrapper wrapper;
+    private ReadHistory wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new ReadHistoryWrapper(interactor);
+        wrapper = new ReadHistory(interactor);
     }
 
     @Test

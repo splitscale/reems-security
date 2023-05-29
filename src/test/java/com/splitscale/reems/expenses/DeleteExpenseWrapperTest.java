@@ -1,7 +1,7 @@
 package com.splitscale.reems.expenses;
 
 import com.splitscale.reems.expenses.delete.DeleteExpenseInteractor;
-import com.splitscale.reems.security.wrappers.expenses.delete.DeleteExpenseWrapper;
+import com.splitscale.reems.security.wrappers.expenses.delete.DeleteExpense;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,12 +18,12 @@ public class DeleteExpenseWrapperTest {
     @Mock
     private DeleteExpenseInteractor interactor;
 
-    private DeleteExpenseWrapper wrapper;
+    private DeleteExpense wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new DeleteExpenseWrapper(interactor);
+        wrapper = new DeleteExpense(interactor);
     }
 
     @Test

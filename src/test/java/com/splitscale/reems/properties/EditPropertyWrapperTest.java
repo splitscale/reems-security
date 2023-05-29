@@ -1,7 +1,7 @@
 package com.splitscale.reems.properties;
 
 import com.splitscale.reems.properties.edit.EditPropertyInteractor;
-import com.splitscale.reems.security.wrappers.properties.edit.EditPropertyWrapper;
+import com.splitscale.reems.security.wrappers.properties.edit.EditProperty;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,12 +18,12 @@ public class EditPropertyWrapperTest {
     @Mock
     private EditPropertyInteractor interactor;
 
-    private EditPropertyWrapper wrapper;
+    private EditProperty wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new EditPropertyWrapper(interactor);
+        wrapper = new EditProperty(interactor);
     }
 
     @Test

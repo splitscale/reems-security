@@ -2,7 +2,7 @@ package com.splitscale.reems.hazard;
 
 import com.splitscale.reems.hazard.environment.EnvironmentalHazard;
 import com.splitscale.reems.hazard.environment.read.ReadEnvironmentalHazardInteractor;
-import com.splitscale.reems.security.wrappers.hazard.read.ReadEnvironmentalHazardWrapper;
+import com.splitscale.reems.security.wrappers.hazard.read.ReadEnvironmentalHazard;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -22,12 +22,12 @@ public class ReadEnvironmentalHazardWrapperTest {
     @Mock
     private ReadEnvironmentalHazardInteractor interactor;
 
-    private ReadEnvironmentalHazardWrapper wrapper;
+    private ReadEnvironmentalHazard wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new ReadEnvironmentalHazardWrapper(interactor);
+        wrapper = new ReadEnvironmentalHazard(interactor);
     }
 
     @Test

@@ -1,7 +1,7 @@
 package com.splitscale.reems.expenses;
 
 import com.splitscale.reems.expenses.create.CreateExpenseInteractor;
-import com.splitscale.reems.security.wrappers.expenses.create.CreateExpenseWrapper;
+import com.splitscale.reems.security.wrappers.expenses.create.CreateExpense;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -19,12 +19,12 @@ public class CreateExpenseWrapperTest {
     @Mock
     private CreateExpenseInteractor interactor;
 
-    private CreateExpenseWrapper wrapper;
+    private CreateExpense wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new CreateExpenseWrapper(interactor);
+        wrapper = new CreateExpense(interactor);
     }
 
     @Test

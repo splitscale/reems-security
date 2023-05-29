@@ -1,7 +1,7 @@
 package com.splitscale.reems.history;
 
 import com.splitscale.reems.history.delete.DeleteHistoryInteractor;
-import com.splitscale.reems.security.wrappers.history.delete.DeleteHistoryWrapper;
+import com.splitscale.reems.security.wrappers.history.delete.DeleteHistory;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,12 +18,12 @@ public class DeleteHistoryWrapperTest {
     @Mock
     private DeleteHistoryInteractor interactor;
 
-    private DeleteHistoryWrapper wrapper;
+    private DeleteHistory wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new DeleteHistoryWrapper(interactor);
+        wrapper = new DeleteHistory(interactor);
     }
 
     @Test

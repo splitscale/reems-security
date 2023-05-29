@@ -1,7 +1,7 @@
 package com.splitscale.reems.properties;
 
 import com.splitscale.reems.properties.delete.DeletePropertyInteractor;
-import com.splitscale.reems.security.wrappers.properties.delete.DeletePropertyWrapper;
+import com.splitscale.reems.security.wrappers.properties.delete.DeleteProperty;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,12 +18,12 @@ public class DeletePropertyWrapperTest {
     @Mock
     private DeletePropertyInteractor interactor;
 
-    private DeletePropertyWrapper wrapper;
+    private DeleteProperty wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new DeletePropertyWrapper(interactor);
+        wrapper = new DeleteProperty(interactor);
     }
 
     @Test

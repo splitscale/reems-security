@@ -1,7 +1,7 @@
 package com.splitscale.reems.properties;
 
 import com.splitscale.reems.properties.read.ReadPropertyInteractor;
-import com.splitscale.reems.security.wrappers.properties.read.ReadPropertyWrapper;
+import com.splitscale.reems.security.wrappers.properties.read.ReadProperty;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,12 +21,12 @@ public class ReadPropertyWrapperTest {
     @Mock
     private ReadPropertyInteractor interactor;
 
-    private ReadPropertyWrapper wrapper;
+    private ReadProperty wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new ReadPropertyWrapper(interactor);
+        wrapper = new ReadProperty(interactor);
     }
 
     @Test

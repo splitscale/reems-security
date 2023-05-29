@@ -1,7 +1,7 @@
 package com.splitscale.reems.mitigation;
 
 import com.splitscale.reems.mitigation.delete.DeleteMitigationInteractor;
-import com.splitscale.reems.security.wrappers.mitigation.delete.DeleteMitigationWrapper;
+import com.splitscale.reems.security.wrappers.mitigation.delete.DeleteMitigation;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,12 +18,12 @@ public class DeleteMitigationWrapperTest {
     @Mock
     private DeleteMitigationInteractor interactor;
 
-    private DeleteMitigationWrapper wrapper;
+    private DeleteMitigation wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new DeleteMitigationWrapper(interactor);
+        wrapper = new DeleteMitigation(interactor);
     }
 
     @Test

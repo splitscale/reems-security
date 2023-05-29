@@ -2,7 +2,7 @@ package com.splitscale.reems.hazard;
 
 import com.splitscale.reems.hazard.environment.EnvironmentalHazardRequest;
 import com.splitscale.reems.hazard.environment.create.CreateEnvironmentalHazardInteractor;
-import com.splitscale.reems.security.wrappers.hazard.create.CreateEnvironmentalHazardWrapper;
+import com.splitscale.reems.security.wrappers.hazard.create.CreateEnvironmentalHazard;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -20,12 +20,12 @@ public class CreateEnvironmentalHazardWrapperTest {
     @Mock
     private CreateEnvironmentalHazardInteractor interactor;
 
-    private CreateEnvironmentalHazardWrapper wrapper;
+    private CreateEnvironmentalHazard wrapper;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        wrapper = new CreateEnvironmentalHazardWrapper(interactor);
+        wrapper = new CreateEnvironmentalHazard(interactor);
     }
 
     @Test
