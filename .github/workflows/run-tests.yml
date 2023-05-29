@@ -1,0 +1,52 @@
+name: Run tests
+
+on:
+  pull_request:
+    branches: [ "master" ]
+    
+env:
+  IMAGE_NAME: reems-core
+  NOTIFICATION_URL: 'http://splitscale.systems:3030/notifications'
+  NOTIFICATION_TITLE: 'Default title'
+  NOTIFICATION_INFO: 'Default info'
+  JOB_URL: 'Default job url'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: test with Maven
+        run: mvn clean test
+      
+      - name: Set NOTIFICATION_TITLE, NOTIFICATION_INFO and JOB_URL
+        run: |
+          repo_name=${{ github.repository }}
+          branch_name=${GITHUB_REF#refs/heads/}
+          title="[$repo_name:$branch_name]"
+          echo "NOTIFICATION_TITLE=$title" >> $GITHUB_ENV
+
+          server_url=${{ github.server_url }}
+          repo=${{ github.repository }}
+          run_id=${{ github.run_id }}
+          job_url="$server_url/$repo/actions/runs/$run_id"
+          echo "JOB_URL=$job_url" >> $GITHUB_ENV
+
+          echo "NOTIFICATION_INFO=${{ github.event.pull_request.title }}" >> $GITHUB_ENV
+
+      - name: Check if job succeeded
+        if: ${{ success() }}
+        run: |
+          curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"${{ env.NOTIFICATION_TITLE }} ${{ github.workflow }}\",\"url\":\"${{ env.JOB_URL }}\",\"content\":{\"status\":\"passed 🚀\",\"info\":\"${{ env.NOTIFICATION_INFO }}\"}}" ${{ env.NOTIFICATION_URL }}
+
+      - name: Check if job failed
+        if: ${{ failure() }}
+        run: |
+          curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"${{ env.NOTIFICATION_TITLE }} ${{ github.workflow }}\",\"url\":\"${{ env.JOB_URL }}\",\"content\":{\"status\":\"failed ❌\",\"info\":\"${{ env.NOTIFICATION_INFO }}\"}}" ${{ env.NOTIFICATION_URL }}
