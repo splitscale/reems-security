@@ -1,7 +1,7 @@
 package com.splitscale.reems.properties;
 
 import com.splitscale.reems.properties.delete.DeletePropertyInteractor;
-import com.splitscale.reems.wrappers.properties.delete.DeletePropertyWrapper;
+import com.splitscale.reems.security.wrappers.properties.delete.DeletePropertyWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,7 +1,7 @@
 package com.splitscale.reems.history;
 
 import com.splitscale.reems.history.delete.DeleteHistoryInteractor;
-import com.splitscale.reems.wrappers.history.delete.DeleteHistoryWrapper;
+import com.splitscale.reems.security.wrappers.history.delete.DeleteHistoryWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

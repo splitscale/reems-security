@@ -1,7 +1,7 @@
 package com.splitscale.reems.history;
 
 import com.splitscale.reems.history.read.ReadHistoryInteractor;
-import com.splitscale.reems.wrappers.history.read.ReadHistoryWrapper;
+import com.splitscale.reems.security.wrappers.history.read.ReadHistoryWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

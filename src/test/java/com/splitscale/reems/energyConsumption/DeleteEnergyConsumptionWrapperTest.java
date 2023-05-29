@@ -1,7 +1,7 @@
 package com.splitscale.reems.energyConsumption;
 
 import com.splitscale.reems.energy.consumption.delete.DeleteEnergyConsumptionInteractor;
-import com.splitscale.reems.wrappers.energyConsumption.delete.DeleteEnergyConsumptionWrapper;
+import com.splitscale.reems.security.wrappers.energyConsumption.delete.DeleteEnergyConsumptionWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

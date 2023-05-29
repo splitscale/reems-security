@@ -2,7 +2,8 @@ package com.splitscale.reems.tenantInfo;
 
 import com.splitscale.reems.tenantinfo.TenantInfoRequest;
 import com.splitscale.reems.tenantinfo.create.CreateTenantInfoInteractor;
-import com.splitscale.reems.wrappers.tenantInfo.create.CreateTenantInfo;
+import com.splitscale.reems.security.services.SecurityService;
+import com.splitscale.reems.security.wrappers.tenantInfo.create.CreateTenantInfo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,30 +18,36 @@ import static org.mockito.Mockito.*;
 
 public class CreateTenantInfoTest {
 
-    @Mock
-    private CreateTenantInfoInteractor interactor;
+  @Mock
+  private CreateTenantInfoInteractor interactor;
 
-    private CreateTenantInfo wrapper;
+  @Mock
+  private SecurityService service;
 
-    @BeforeEach
-    public void setUp() {
-        MockitoAnnotations.openMocks(this);
-        wrapper = new CreateTenantInfo(interactor);
-    }
+  private CreateTenantInfo wrapper;
 
-    @Test
-    public void testCreateTenantInfo() throws IOException, GeneralSecurityException {
-        // Arrange
-        TenantInfoRequest request = new TenantInfoRequest(null, null, null, null);
-        String expectedResponse = "Success";
+  @BeforeEach
+  public void setUp() {
+    MockitoAnnotations.openMocks(this);
+    wrapper = new CreateTenantInfo(service, interactor);
+  }
 
-        when(interactor.createTenantInfo(request)).thenReturn(expectedResponse);
+  @Test
+  public void testCreateTenantInfo() throws IOException, GeneralSecurityException {
+    // Arrange
+    TenantInfoRequest request = new TenantInfoRequest(null, null, null, null);
+    String jwtToken = "token";
+    String userId = "userId";
 
-        // Act
-        String actualResponse = wrapper.create(request);
+    String expectedResponse = "Success";
 
-        // Assert
-        assertEquals(expectedResponse, actualResponse);
-        verify(interactor, times(1)).createTenantInfo(request);
-    }
+    when(interactor.createTenantInfo(request)).thenReturn(expectedResponse);
+
+    // Act
+    String actualResponse = wrapper.create(request, jwtToken, userId);
+
+    // Assert
+    assertEquals(expectedResponse, actualResponse);
+    verify(interactor, times(1)).createTenantInfo(request);
+  }
 }

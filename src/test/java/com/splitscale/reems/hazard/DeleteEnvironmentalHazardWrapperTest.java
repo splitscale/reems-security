@@ -1,7 +1,7 @@
 package com.splitscale.reems.hazard;
 
 import com.splitscale.reems.hazard.environment.delete.DeleteEnvironmentalHazardInteractor;
-import com.splitscale.reems.wrappers.hazard.delete.DeleteEnvironmentalHazardWrapper;
+import com.splitscale.reems.security.wrappers.hazard.delete.DeleteEnvironmentalHazardWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

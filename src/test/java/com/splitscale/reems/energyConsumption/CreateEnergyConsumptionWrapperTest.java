@@ -2,7 +2,7 @@ package com.splitscale.reems.energyConsumption;
 
 import com.splitscale.reems.energy.consumption.EnergyConsumptionRequest;
 import com.splitscale.reems.energy.consumption.create.CreateEnergyConsumptionInteractor;
-import com.splitscale.reems.wrappers.energyConsumption.create.CreateEnergyConsumptionWrapper;
+import com.splitscale.reems.security.wrappers.energyConsumption.create.CreateEnergyConsumptionWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

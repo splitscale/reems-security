@@ -2,7 +2,7 @@ package com.splitscale.reems.hazard;
 
 import com.splitscale.reems.hazard.environment.EnvironmentalHazard;
 import com.splitscale.reems.hazard.environment.edit.EditEnvironmentalHazardInteractor;
-import com.splitscale.reems.wrappers.hazard.edit.EditEnvironmentalHazardWrapper;
+import com.splitscale.reems.security.wrappers.hazard.edit.EditEnvironmentalHazardWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

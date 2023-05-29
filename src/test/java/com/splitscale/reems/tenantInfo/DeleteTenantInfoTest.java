@@ -1,7 +1,7 @@
 package com.splitscale.reems.tenantInfo;
 
 import com.splitscale.reems.tenantinfo.delete.DeleteTenantInfoInteractor;
-import com.splitscale.reems.wrappers.tenantInfo.delete.DeleteTenantInfo;
+import com.splitscale.reems.security.wrappers.tenantInfo.delete.DeleteTenantInfo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,7 +1,7 @@
 package com.splitscale.reems.expenses;
 
 import com.splitscale.reems.expenses.edit.EditExpenseInteractor;
-import com.splitscale.reems.wrappers.expenses.edit.EditExpenseWrapper;
+import com.splitscale.reems.security.wrappers.expenses.edit.EditExpenseWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

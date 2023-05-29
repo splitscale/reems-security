@@ -2,7 +2,7 @@ package com.splitscale.reems.tenantInfo;
 
 import com.splitscale.reems.tenantinfo.TenantInfo;
 import com.splitscale.reems.tenantinfo.edit.EditTenantInfoInteractor;
-import com.splitscale.reems.wrappers.tenantInfo.edit.EditTenantInfo;
+import com.splitscale.reems.security.wrappers.tenantInfo.edit.EditTenantInfo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,7 +1,7 @@
 package com.splitscale.reems.properties;
 
 import com.splitscale.reems.properties.create.CreatePropertyInteractor;
-import com.splitscale.reems.wrappers.properties.create.CreatePropertyWrapper;
+import com.splitscale.reems.security.wrappers.properties.create.CreatePropertyWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

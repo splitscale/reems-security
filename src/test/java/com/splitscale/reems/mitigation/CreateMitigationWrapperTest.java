@@ -1,7 +1,7 @@
 package com.splitscale.reems.mitigation;
 
 import com.splitscale.reems.mitigation.create.CreateMitigationInteractor;
-import com.splitscale.reems.wrappers.mitigation.create.CreateMitigationWrapper;
+import com.splitscale.reems.security.wrappers.mitigation.create.CreateMitigationWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

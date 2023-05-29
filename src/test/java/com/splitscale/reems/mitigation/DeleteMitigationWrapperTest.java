@@ -1,7 +1,7 @@
 package com.splitscale.reems.mitigation;
 
 import com.splitscale.reems.mitigation.delete.DeleteMitigationInteractor;
-import com.splitscale.reems.wrappers.mitigation.delete.DeleteMitigationWrapper;
+import com.splitscale.reems.security.wrappers.mitigation.delete.DeleteMitigationWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -2,7 +2,7 @@ package com.splitscale.reems.tenantInfo;
 
 import com.splitscale.reems.tenantinfo.TenantInfo;
 import com.splitscale.reems.tenantinfo.read.ReadTenantInfoInteractor;
-import com.splitscale.reems.wrappers.tenantInfo.read.ReadTenantInfo;
+import com.splitscale.reems.security.wrappers.tenantInfo.read.ReadTenantInfo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

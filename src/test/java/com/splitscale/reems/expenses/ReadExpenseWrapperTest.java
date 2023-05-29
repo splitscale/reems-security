@@ -1,7 +1,7 @@
 package com.splitscale.reems.expenses;
 
 import com.splitscale.reems.expenses.read.ReadExpenseInteractor;
-import com.splitscale.reems.wrappers.expenses.read.ReadExpenseWrapper;
+import com.splitscale.reems.security.wrappers.expenses.read.ReadExpenseWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

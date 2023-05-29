@@ -1,7 +1,7 @@
 package com.splitscale.reems.expenses;
 
 import com.splitscale.reems.expenses.delete.DeleteExpenseInteractor;
-import com.splitscale.reems.wrappers.expenses.delete.DeleteExpenseWrapper;
+import com.splitscale.reems.security.wrappers.expenses.delete.DeleteExpenseWrapper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
