@@ -31,7 +31,7 @@ public class CreateEnergyConsumptionWrapperTest {
     @Test
     public void testCreateEnergyConsumption() throws IOException, GeneralSecurityException {
         // Arrange
-        EnergyConsumptionRequest request = new EnergyConsumptionRequest(null, null);
+        EnergyConsumptionRequest request = new EnergyConsumptionRequest(null, null, null, null, null, null, null, null, 0);
         String expectedResponse = "Success";
 
         when(interactor.createEnergyConsumption(request)).thenReturn(expectedResponse);

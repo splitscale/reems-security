@@ -48,7 +48,7 @@ public class ReadPropertyWrapperTest {
     public void testGetPropertyById() throws IOException, GeneralSecurityException {
         // Arrange
         String id = "123";
-        Property expectedProperty = new Property(id, id, id, id);
+        Property expectedProperty = new Property(id, null, null, id, id, id);
 
         when(interactor.getById(id)).thenReturn(expectedProperty);
 

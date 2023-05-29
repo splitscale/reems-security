@@ -34,8 +34,8 @@ public class ReadTenantInfoTest {
     public void testGetAllTenantInfo() throws IOException, GeneralSecurityException {
         // Arrange
         List<TenantInfo> expectedTenantInfoList = new ArrayList<>();
-        expectedTenantInfoList.add(new TenantInfo("1", "Tenant 1", null));
-        expectedTenantInfoList.add(new TenantInfo("2", "Tenant 2", null));
+        expectedTenantInfoList.add(new TenantInfo("1", "Tenant 1", null, null));
+        expectedTenantInfoList.add(new TenantInfo("2", "Tenant 2", null, null));
 
         when(interactor.getAllTenantInfo()).thenReturn(expectedTenantInfoList);
 
@@ -51,7 +51,7 @@ public class ReadTenantInfoTest {
     public void testGetTenantInfoById() throws IOException, GeneralSecurityException {
         // Arrange
         String tenantId = "1";
-        TenantInfo expectedTenantInfo = new TenantInfo(tenantId, "Tenant 1", tenantId);
+        TenantInfo expectedTenantInfo = new TenantInfo();
 
         when(interactor.getTenantInfoById(tenantId)).thenReturn(expectedTenantInfo);
 

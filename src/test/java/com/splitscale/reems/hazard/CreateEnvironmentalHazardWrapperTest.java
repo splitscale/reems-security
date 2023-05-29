@@ -31,7 +31,7 @@ public class CreateEnvironmentalHazardWrapperTest {
     @Test
     public void testCreateEnvironmentalHazard() throws IOException, GeneralSecurityException {
         // Arrange
-        EnvironmentalHazardRequest request = new EnvironmentalHazardRequest(null, null, null, null, null, null);
+        EnvironmentalHazardRequest request = new EnvironmentalHazardRequest(null, null, null, null, null, null, null, null);
         String expectedResponse = "Success";
 
         when(interactor.createEnvironmentalHazard(request)).thenReturn(expectedResponse);

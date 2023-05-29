@@ -30,7 +30,7 @@ public class CreatePropertyWrapperTest {
     @Test
     public void testCreateProperty() throws IOException, GeneralSecurityException {
         // Arrange
-        PropertyRequest request = new PropertyRequest(null, null, null);
+        PropertyRequest request = new PropertyRequest(null, null, null, null, null, null);
         String expectedResponse = "Success";
 
         when(interactor.createProperty(request)).thenReturn(expectedResponse);

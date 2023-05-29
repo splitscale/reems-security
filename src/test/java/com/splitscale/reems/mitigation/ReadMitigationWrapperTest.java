@@ -48,7 +48,7 @@ public class ReadMitigationWrapperTest {
     public void testGetMitigationById() throws IOException, GeneralSecurityException {
         // Arrange
         String id = "123";
-        Mitigation expectedMitigation = new Mitigation(id, id, id, id, id, null, null);
+        Mitigation expectedMitigation = new Mitigation();
 
         when(interactor.getMitigationById(id)).thenReturn(expectedMitigation);
 

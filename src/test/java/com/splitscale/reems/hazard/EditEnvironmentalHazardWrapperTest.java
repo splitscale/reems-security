@@ -30,9 +30,7 @@ public class EditEnvironmentalHazardWrapperTest {
     @Test
     public void testEditEnvironmentalHazard() throws IOException, GeneralSecurityException {
         // Arrange
-        EnvironmentalHazard environmentalHazard = new EnvironmentalHazard(null, null, "Hazard 1", "Chemical",
-                "A large plastic is dumped outside of the property  with a lot of chemicals or other substances",
-                "Bulding A", "high", "in-progress", null, null);
+        EnvironmentalHazard environmentalHazard = new EnvironmentalHazard();
 
         // Act
         wrapper.edit(environmentalHazard);

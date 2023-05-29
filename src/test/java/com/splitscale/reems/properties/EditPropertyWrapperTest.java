@@ -29,7 +29,7 @@ public class EditPropertyWrapperTest {
     @Test
     public void testEditProperty() throws IOException, GeneralSecurityException {
         // Arrange
-        Property property = new Property(null, null, null, null);
+        Property property = new Property(null, null, null, null, null, null);
 
         // Act
         wrapper.edit(property);

@@ -30,7 +30,7 @@ public class CreateMitigationWrapperTest {
     @Test
     public void testCreateMitigation() throws IOException, GeneralSecurityException {
         // Arrange
-        MitigationRequest request = new MitigationRequest("Sample mitigation", null, null);
+        MitigationRequest request = new MitigationRequest("Sample mitigation", null, null, null, null, null, null, null);
 
         String expectedResponse = "Success";
 
