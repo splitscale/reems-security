@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.List;
 
-import com.splitscale.reems.rentContract.RentContract;
-import com.splitscale.reems.rentContract.read.ReadRentContractInteractor;
+import com.splitscale.reems.core.rentContract.RentContract;
+import com.splitscale.reems.core.rentContract.read.ReadRentContractInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class ReadRentContract {

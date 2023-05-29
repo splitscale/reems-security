@@ -1,7 +1,7 @@
 package com.splitscale.reems.security.wrappers.history.read;
 
-import com.splitscale.reems.history.History;
-import com.splitscale.reems.history.read.ReadHistoryInteractor;
+import com.splitscale.reems.core.history.History;
+import com.splitscale.reems.core.history.read.ReadHistoryInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 import java.io.IOException;

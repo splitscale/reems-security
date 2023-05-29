@@ -1,6 +1,6 @@
 package com.splitscale.reems.security.wrappers.hazard.delete;
 
-import com.splitscale.reems.hazard.environment.delete.DeleteEnvironmentalHazardInteractor;
+import com.splitscale.reems.core.hazard.environment.delete.DeleteEnvironmentalHazardInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 import java.io.IOException;

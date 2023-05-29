@@ -1,6 +1,6 @@
 package com.splitscale.reems.hazard;
 
-import com.splitscale.reems.hazard.environment.delete.DeleteEnvironmentalHazardInteractor;
+import com.splitscale.reems.core.hazard.environment.delete.DeleteEnvironmentalHazardInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.hazard.delete.DeleteEnvironmentalHazard;
 

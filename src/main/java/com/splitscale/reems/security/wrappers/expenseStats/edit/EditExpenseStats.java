@@ -3,8 +3,8 @@ package com.splitscale.reems.security.wrappers.expenseStats.edit;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-import com.splitscale.reems.expenseStats.ExpenseStats;
-import com.splitscale.reems.expenseStats.edit.EditExpenseStatsInteractor;
+import com.splitscale.reems.core.expenseStats.ExpenseStats;
+import com.splitscale.reems.core.expenseStats.edit.EditExpenseStatsInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class EditExpenseStats {

@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.List;
 
-import com.splitscale.reems.expenseStats.ExpenseStats;
-import com.splitscale.reems.expenseStats.read.ReadExpenseStatsInteractor;
+import com.splitscale.reems.core.expenseStats.ExpenseStats;
+import com.splitscale.reems.core.expenseStats.read.ReadExpenseStatsInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class ReadExpenseStats {

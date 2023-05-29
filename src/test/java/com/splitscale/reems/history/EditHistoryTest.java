@@ -1,6 +1,7 @@
 package com.splitscale.reems.history;
 
-import com.splitscale.reems.history.edit.EditHistoryInteractor;
+import com.splitscale.reems.core.history.History;
+import com.splitscale.reems.core.history.edit.EditHistoryInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.history.edit.EditHistory;
 

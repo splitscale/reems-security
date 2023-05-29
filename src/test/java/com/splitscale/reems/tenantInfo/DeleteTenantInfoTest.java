@@ -1,6 +1,6 @@
-package com.splitscale.reems.tenantInfo;
+package com.splitscale.reems.tenantinfo;
 
-import com.splitscale.reems.tenantinfo.delete.DeleteTenantInfoInteractor;
+import com.splitscale.reems.core.tenantinfo.delete.DeleteTenantInfoInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.tenantInfo.delete.DeleteTenantInfo;
 

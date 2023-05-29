@@ -1,6 +1,7 @@
 package com.splitscale.reems.properties;
 
-import com.splitscale.reems.properties.edit.EditPropertyInteractor;
+import com.splitscale.reems.core.properties.Property;
+import com.splitscale.reems.core.properties.edit.EditPropertyInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.properties.edit.EditProperty;
 

@@ -3,7 +3,7 @@ package com.splitscale.reems.security.wrappers.energyStats.delete;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-import com.splitscale.reems.energyStats.delete.DeleteEnergyStatsInteractor;
+import com.splitscale.reems.core.energyStats.delete.DeleteEnergyStatsInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class DeleteEnergyStats {

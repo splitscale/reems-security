@@ -3,8 +3,8 @@ package com.splitscale.reems.security.wrappers.rentContract.edit;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-import com.splitscale.reems.rentContract.RentContract;
-import com.splitscale.reems.rentContract.edit.EditRentContractInteractor;
+import com.splitscale.reems.core.rentContract.RentContract;
+import com.splitscale.reems.core.rentContract.edit.EditRentContractInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class EditRentContract {

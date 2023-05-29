@@ -1,7 +1,7 @@
 package com.splitscale.reems.security.wrappers.energyConsumption.create;
 
-import com.splitscale.reems.energy.consumption.EnergyConsumptionRequest;
-import com.splitscale.reems.energy.consumption.create.CreateEnergyConsumptionInteractor;
+import com.splitscale.reems.core.energy.consumption.EnergyConsumptionRequest;
+import com.splitscale.reems.core.energy.consumption.create.CreateEnergyConsumptionInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 import java.io.IOException;

@@ -1,6 +1,6 @@
 package com.splitscale.reems.security.wrappers.mitigation.delete;
 
-import com.splitscale.reems.mitigation.delete.DeleteMitigationInteractor;
+import com.splitscale.reems.core.mitigation.delete.DeleteMitigationInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 import java.io.IOException;

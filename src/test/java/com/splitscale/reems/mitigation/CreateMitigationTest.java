@@ -1,6 +1,7 @@
 package com.splitscale.reems.mitigation;
 
-import com.splitscale.reems.mitigation.create.CreateMitigationInteractor;
+import com.splitscale.reems.core.mitigation.MitigationRequest;
+import com.splitscale.reems.core.mitigation.create.CreateMitigationInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.mitigation.create.CreateMitigation;
 

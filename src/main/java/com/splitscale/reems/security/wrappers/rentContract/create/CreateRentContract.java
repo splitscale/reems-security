@@ -3,8 +3,8 @@ package com.splitscale.reems.security.wrappers.rentContract.create;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-import com.splitscale.reems.rentContract.RentContractRequest;
-import com.splitscale.reems.rentContract.create.CreateRentContractInteractor;
+import com.splitscale.reems.core.rentContract.RentContractRequest;
+import com.splitscale.reems.core.rentContract.create.CreateRentContractInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class CreateRentContract {

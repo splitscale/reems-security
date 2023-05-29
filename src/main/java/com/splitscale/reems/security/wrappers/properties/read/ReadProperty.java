@@ -1,7 +1,7 @@
 package com.splitscale.reems.security.wrappers.properties.read;
 
-import com.splitscale.reems.properties.Property;
-import com.splitscale.reems.properties.read.ReadPropertyInteractor;
+import com.splitscale.reems.core.properties.Property;
+import com.splitscale.reems.core.properties.read.ReadPropertyInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 import java.io.IOException;

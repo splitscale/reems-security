@@ -3,8 +3,8 @@ package com.splitscale.reems.security.wrappers.energyStats.edit;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-import com.splitscale.reems.energyStats.EnergyStats;
-import com.splitscale.reems.energyStats.edit.EditEnergyStatsInteractor;
+import com.splitscale.reems.core.energyStats.EnergyStats;
+import com.splitscale.reems.core.energyStats.edit.EditEnergyStatsInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class EditEnergyStats {

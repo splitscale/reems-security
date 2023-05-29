@@ -3,8 +3,8 @@ package com.splitscale.reems.security.wrappers.hazardStats.create;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-import com.splitscale.reems.hazardStats.HazardStatsRequest;
-import com.splitscale.reems.hazardStats.create.CreateHazardStatsInteractor;
+import com.splitscale.reems.core.hazardStats.HazardStatsRequest;
+import com.splitscale.reems.core.hazardStats.create.CreateHazardStatsInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class CreatHazardStats {

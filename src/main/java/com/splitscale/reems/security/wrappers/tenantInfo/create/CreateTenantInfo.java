@@ -1,8 +1,8 @@
 package com.splitscale.reems.security.wrappers.tenantInfo.create;
 
 import com.splitscale.reems.security.services.SecurityService;
-import com.splitscale.reems.tenantinfo.TenantInfoRequest;
-import com.splitscale.reems.tenantinfo.create.CreateTenantInfoInteractor;
+import com.splitscale.reems.core.tenantinfo.TenantInfoRequest;
+import com.splitscale.reems.core.tenantinfo.create.CreateTenantInfoInteractor;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 

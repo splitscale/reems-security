@@ -3,7 +3,7 @@ package com.splitscale.reems.security.wrappers.expenseStats.delete;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-import com.splitscale.reems.expenseStats.delete.DeleteExpenseStatsInteractor;
+import com.splitscale.reems.core.expenseStats.delete.DeleteExpenseStatsInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class DeleteExpenseStats {

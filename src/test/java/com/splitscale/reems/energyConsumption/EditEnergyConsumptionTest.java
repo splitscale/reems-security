@@ -1,7 +1,7 @@
 package com.splitscale.reems.energyConsumption;
 
-import com.splitscale.reems.energy.consumption.EnergyConsumption;
-import com.splitscale.reems.energy.consumption.edit.EditEnergyConsumptionInteractor;
+import com.splitscale.reems.core.energy.consumption.EnergyConsumption;
+import com.splitscale.reems.core.energy.consumption.edit.EditEnergyConsumptionInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.energyConsumption.edit.EditEnergyConsumption;
 

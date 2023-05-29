@@ -1,6 +1,7 @@
 package com.splitscale.reems.expenses;
 
-import com.splitscale.reems.expenses.create.CreateExpenseInteractor;
+import com.splitscale.reems.core.expenses.ExpenseRequest;
+import com.splitscale.reems.core.expenses.create.CreateExpenseInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.expenses.create.CreateExpense;
 
@@ -17,22 +18,22 @@ import static org.mockito.Mockito.*;
 
 public class CreateExpenseTest {
 
-    @Mock
-    private SecurityService securityService;
+  @Mock
+  private SecurityService securityService;
 
-    @Mock
-    private CreateExpenseInteractor interactor;
+  @Mock
+  private CreateExpenseInteractor interactor;
 
-    private CreateExpense wrapper;
+  private CreateExpense wrapper;
 
-    @BeforeEach
-    public void setUp() {
-        MockitoAnnotations.openMocks(this);
-        wrapper = new CreateExpense(securityService, interactor);
-    }
+  @BeforeEach
+  public void setUp() {
+    MockitoAnnotations.openMocks(this);
+    wrapper = new CreateExpense(securityService, interactor);
+  }
 
-    @Test
-public void testCreateExpense() throws IOException, GeneralSecurityException {
+  @Test
+  public void testCreateExpense() throws IOException, GeneralSecurityException {
     // Arrange
     ExpenseRequest request = new ExpenseRequest(null, null, null, null, null);
     String expectedResponse = "Success";
@@ -50,6 +51,6 @@ public void testCreateExpense() throws IOException, GeneralSecurityException {
     assertEquals(expectedResponse, actualResponse);
     verify(securityService, times(1)).validateJwt(jwtToken, userId);
     verify(interactor, times(1)).createExpense(request);
-}
+  }
 
 }

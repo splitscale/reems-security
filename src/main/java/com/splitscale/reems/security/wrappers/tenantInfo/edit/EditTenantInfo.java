@@ -1,8 +1,8 @@
 package com.splitscale.reems.security.wrappers.tenantInfo.edit;
 
 import com.splitscale.reems.security.services.SecurityService;
-import com.splitscale.reems.tenantinfo.TenantInfo;
-import com.splitscale.reems.tenantinfo.edit.EditTenantInfoInteractor;
+import com.splitscale.reems.core.tenantinfo.TenantInfo;
+import com.splitscale.reems.core.tenantinfo.edit.EditTenantInfoInteractor;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 

@@ -1,7 +1,7 @@
 package com.splitscale.reems.hazard;
 
-import com.splitscale.reems.hazard.environment.EnvironmentalHazard;
-import com.splitscale.reems.hazard.environment.edit.EditEnvironmentalHazardInteractor;
+import com.splitscale.reems.core.hazard.environment.EnvironmentalHazard;
+import com.splitscale.reems.core.hazard.environment.edit.EditEnvironmentalHazardInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.hazard.edit.EditEnvironmentalHazard;
 

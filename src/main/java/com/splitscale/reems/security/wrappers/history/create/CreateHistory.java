@@ -3,8 +3,8 @@ package com.splitscale.reems.security.wrappers.history.create;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-import com.splitscale.reems.history.HistoryRequest;
-import com.splitscale.reems.history.create.CreateHistoryInteractor;
+import com.splitscale.reems.core.history.HistoryRequest;
+import com.splitscale.reems.core.history.create.CreateHistoryInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class CreateHistory {

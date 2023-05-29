@@ -1,6 +1,6 @@
 package com.splitscale.reems.security.wrappers.history.delete;
 
-import com.splitscale.reems.history.delete.DeleteHistoryInteractor;
+import com.splitscale.reems.core.history.delete.DeleteHistoryInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 import java.io.IOException;

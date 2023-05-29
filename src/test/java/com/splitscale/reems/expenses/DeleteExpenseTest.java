@@ -1,6 +1,6 @@
 package com.splitscale.reems.expenses;
 
-import com.splitscale.reems.expenses.delete.DeleteExpenseInteractor;
+import com.splitscale.reems.core.expenses.delete.DeleteExpenseInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.expenses.delete.DeleteExpense;
 

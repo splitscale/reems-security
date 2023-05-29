@@ -1,6 +1,7 @@
 package com.splitscale.reems.history;
 
-import com.splitscale.reems.history.create.CreateHistoryInteractor;
+import com.splitscale.reems.core.history.HistoryRequest;
+import com.splitscale.reems.core.history.create.CreateHistoryInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 import com.splitscale.reems.security.wrappers.history.create.CreateHistory;
 

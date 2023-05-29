@@ -1,6 +1,6 @@
 package com.splitscale.reems.security.wrappers.energyConsumption.delete;
 
-import com.splitscale.reems.energy.consumption.delete.DeleteEnergyConsumptionInteractor;
+import com.splitscale.reems.core.energy.consumption.delete.DeleteEnergyConsumptionInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 import java.io.IOException;

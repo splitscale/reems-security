@@ -1,7 +1,7 @@
 package com.splitscale.reems.security.wrappers.energyConsumption.read;
 
-import com.splitscale.reems.energy.consumption.EnergyConsumption;
-import com.splitscale.reems.energy.consumption.read.ReadEnergyConsumptionInteractor;
+import com.splitscale.reems.core.energy.consumption.EnergyConsumption;
+import com.splitscale.reems.core.energy.consumption.read.ReadEnergyConsumptionInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 import java.io.IOException;

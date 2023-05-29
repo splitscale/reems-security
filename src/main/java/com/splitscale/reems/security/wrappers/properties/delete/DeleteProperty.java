@@ -1,6 +1,6 @@
 package com.splitscale.reems.security.wrappers.properties.delete;
 
-import com.splitscale.reems.properties.delete.DeletePropertyInteractor;
+import com.splitscale.reems.core.properties.delete.DeletePropertyInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 import java.io.IOException;

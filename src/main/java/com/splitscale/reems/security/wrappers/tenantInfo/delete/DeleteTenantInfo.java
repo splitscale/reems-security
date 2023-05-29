@@ -1,7 +1,7 @@
 package com.splitscale.reems.security.wrappers.tenantInfo.delete;
 
 import com.splitscale.reems.security.services.SecurityService;
-import com.splitscale.reems.tenantinfo.delete.DeleteTenantInfoInteractor;
+import com.splitscale.reems.core.tenantinfo.delete.DeleteTenantInfoInteractor;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 

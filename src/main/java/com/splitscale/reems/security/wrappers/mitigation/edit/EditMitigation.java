@@ -1,7 +1,7 @@
 package com.splitscale.reems.security.wrappers.mitigation.edit;
 
-import com.splitscale.reems.mitigation.Mitigation;
-import com.splitscale.reems.mitigation.edit.EditMitigationInteractor;
+import com.splitscale.reems.core.mitigation.Mitigation;
+import com.splitscale.reems.core.mitigation.edit.EditMitigationInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 import java.io.IOException;

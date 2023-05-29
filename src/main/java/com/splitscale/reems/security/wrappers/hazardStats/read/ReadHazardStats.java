@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.List;
 
-import com.splitscale.reems.hazardStats.HazardStats;
-import com.splitscale.reems.hazardStats.read.ReadHazardStatsInteractor;
+import com.splitscale.reems.core.hazardStats.HazardStats;
+import com.splitscale.reems.core.hazardStats.read.ReadHazardStatsInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class ReadHazardStats {

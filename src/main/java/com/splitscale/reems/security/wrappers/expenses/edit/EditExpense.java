@@ -1,7 +1,7 @@
 package com.splitscale.reems.security.wrappers.expenses.edit;
 
-import com.splitscale.reems.expenses.Expense;
-import com.splitscale.reems.expenses.edit.EditExpenseInteractor;
+import com.splitscale.reems.core.expenses.Expense;
+import com.splitscale.reems.core.expenses.edit.EditExpenseInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 import java.io.IOException;

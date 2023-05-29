@@ -3,7 +3,7 @@ package com.splitscale.reems.security.wrappers.hazardStats.delete;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-import com.splitscale.reems.hazardStats.delete.DeleteHazardStatsInteractor;
+import com.splitscale.reems.core.hazardStats.delete.DeleteHazardStatsInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class DeleteHazardStats {

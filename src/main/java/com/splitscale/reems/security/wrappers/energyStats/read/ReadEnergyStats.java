@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.List;
 
-import com.splitscale.reems.energyStats.EnergyStats;
-import com.splitscale.reems.energyStats.read.ReadEnergyStatsInteractor;
+import com.splitscale.reems.core.energyStats.EnergyStats;
+import com.splitscale.reems.core.energyStats.read.ReadEnergyStatsInteractor;
 import com.splitscale.reems.security.services.SecurityService;
 
 public class ReadEnergyStats {
