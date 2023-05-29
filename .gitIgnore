@@ -1,0 +1,58 @@
+# Maven target directory
+target/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Compiled Java class files
+*.class
+
+# Maven build files
+mvnw
+mvnw.cmd
+.mvn/
+
+# Dependency directories
+lib/
+repository/
+
+# Eclipse specific files
+.classpath
+.project
+.settings/
+
+# IntelliJ specific files
+*.iml
+*.ipr
+*.iws
+out/
+.idea/
+
+# NetBeans specific files
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Visual Studio Code specific files
+.vscode/
+
+# Logs
+*.log
+
+# Mac specific files
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# Gradle files
+.gradle/
+build/
